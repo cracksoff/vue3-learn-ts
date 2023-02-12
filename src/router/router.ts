@@ -1,5 +1,5 @@
 import Main from '@/pages/Main.vue'
-import UserPage from '@/pages/UserPage.vue'
+import PostPageWithStore from '@/pages/PostPageWithStore.vue'
 import About from '@/pages/About.vue'
 import PostIdPage from '@/pages/PostIdPage.vue'
 
@@ -10,10 +10,10 @@ const routes = [
 		path: '/',
 		component: Main
 	},
-	{
-		path: '/posts',
-		component: UserPage
-	},
+	// {
+	// 	path: '/posts',
+	// 	component: UserPage
+	// },
 	{
 		path: '/about',
 		component: About
@@ -21,6 +21,10 @@ const routes = [
 	{
 		path: '/posts/:id',
 		component: PostIdPage
+	},
+	{
+		path: '/store',
+		component: PostPageWithStore
 	}
 ]
 

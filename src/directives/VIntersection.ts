@@ -3,6 +3,7 @@ import { DirectiveBinding } from 'vue'
 type FocusableElement = HTMLInputElement | HTMLTextAreaElement
 
 export default {
+	name: 'intersection',
 	mounted(el: FocusableElement, binding: DirectiveBinding) {
 		console.log(binding)
 
